@@ -19,7 +19,7 @@ EM::run do
 
     # Leap motion
     puts "leap motion connecting..."
-    leap = LeapMotion.connect
+    leap = LeapMotion.connect :gestures => true
 
     leap.on :connect do
       puts "leap motion connected"
